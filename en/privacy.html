@@ -18,29 +18,33 @@
 <p class="nota">This English version is a translation provided for convenience. If it differs from the Spanish version, the Spanish version prevails.</p>
 <section>
 <h2>1. What data we collect</h2>
-<p>Identity: name, date of birth, ID type and number, and the photos of the ID you upload.</p>
-<p>Contact and location: email, phone, address, city, and country.</p>
+<p>When you sign up: your name, your email and your password.</p>
+<p>If you fill them in under Personal details, which is optional: date of birth, phone, address, city, country, ID type and number, and the photos of your ID. A lender may ask you for them before lending to you.</p>
 <p>If you sign in with Apple or Google: the name and email that service gives us (with Apple it may be an address that forwards to your email, if you choose to hide it) and an identifier of your account with that service. We do not receive your Apple or Google password.</p>
 <p>Lender data: their deposit method and the details of the account where they receive money.</p>
+<p>Internal clients: if you are a lender and record a borrower who doesn't use the application, we keep the details you enter about them: their name and, if you add them, their phone, email, date of birth, ID, address, notes and the photos of their ID.</p>
 <p>Activity: requests, loans, installments, and recorded payments.</p>
+<p>From your phone: the identifier Apple or Google gives it to receive notifications, and whether it is an iPhone or Android.</p>
 <p>We do not collect data from your device for advertising purposes, and we do not use third-party trackers.</p>
 </section>
 <section>
 <h2>2. What we use it for</h2>
-<p>So that a lender can know who they are lending to, which is why documents are requested.</p>
+<p>So that a lender can know who they are lending to, which is why they can ask for documents.</p>
 <p>To keep track of what is owed and what has been paid.</p>
-<p>To contact you about your account or your loans.</p>
+<p>To notify you of due dates, requests and payments, and to contact you about your account or your loans.</p>
 <p>We do not use your data for advertising, and we do not sell it or transfer it to third parties for commercial purposes.</p>
 </section>
 <section>
 <h2>3. Who sees what</h2>
-<p>The lender you send a request to sees your identity and contact details and the photos of your ID. That is what allows them to decide whether to lend to you.</p>
+<p>The lender you send a request to sees the identity and contact details you have filled in, and the photos of your ID if you uploaded them. That is what allows them to decide whether to lend to you.</p>
 <p>The borrower sees the lender's name, code, city and the terms they publish. Once the lender approves a loan for them, the borrower also sees the lender's deposit methods with the details the lender entered for each one (for example, bank, account number and holder), so they know how to receive the money and how to pay. They do not see the lender's portfolio or other clients.</p>
+<p>An internal client's details and photos are seen only by the lender who recorded them.</p>
 <p>No user sees another user's loans, clients, or documents. This does not depend on the application but on the database rules, which reject any query for other people's data.</p>
 </section>
 <section>
 <h2>4. Who it is shared with</h2>
 <p>With Supabase, which hosts the database and files on our behalf and under our instructions.</p>
+<p>With Expo, which delivers notifications to your phone through Apple or Google: it receives your phone's notification identifier and the text of the notification.</p>
 <p>If you sign in with Apple or Google: that service confirms who you are and knows that you use PrestaLink. It receives nothing about what you do in the application.</p>
 <p>If you are a lender and subscribe: with Apple or Google (or the external processor you pay with), which charge the subscription, and with RevenueCat, which confirms its status to us. They receive your user identifier and the purchase details, but not the details of your loans or your clients.</p>
 <p>With Sentry, which receives the app's error reports so we can fix them: what failed, on which screen, your phone's model and operating system, the app version and your user identifier. It does not receive your name, your email, your documents or the details of your loans.</p>
@@ -49,27 +53,31 @@
 </section>
 <section>
 <h2>5. The photos of your ID</h2>
-<p>They are stored in private storage, in a separate folder for each user. They cannot be accessed through a public link.</p>
-<p>Only the lender you sent a request to can see them. They are not used for anything else.</p>
+<p>Uploading them is optional. They are stored in private storage, in a separate folder for each user. They cannot be accessed through a public link.</p>
+<p>Only the lender you sent a request to can see them, and they can approve them or ask you for new ones. They are not used for anything else.</p>
+<p>The photos of an internal client's ID are uploaded by their lender, and only that lender can see them.</p>
 </section>
 <section>
 <h2>6. How long we keep it</h2>
 <p>For as long as your account exists, and afterward for the time required by applicable legal or accounting obligations.</p>
 <p>If you delete your account, we erase your personal data, the photos of your ID, your email, and your access. If you had loans, the other party keeps that history with your name marked &quot;account deleted&quot;, because it is also their record of what they lent or paid.</p>
+<p>If you are a lender, deleting your account also erases your internal clients, with their loans, details and photos. An internal client with no loans can be deleted at any time, and their details and photos with them.</p>
 <p>If you signed in with Apple, when you delete your account we also ask Apple to remove the permission you gave PrestaLink.</p>
-<p>While you have loans in progress, the account cannot be deleted: their history is the proof of what is owed.</p>
+<p>While you have loans in progress with another user, the account cannot be deleted: their history is the proof of what is owed.</p>
 </section>
 <section>
 <h2>7. Your rights</h2>
 <p>Access your data and correct it: you can edit it yourself under More › Personal details.</p>
 <p>Ask us to delete your account and your data. If you have active loans, they must be closed first: what is owed cannot be erased unilaterally because it affects the other party.</p>
 <p>Object to processing or request a copy of your data by writing to <a href="mailto:prestalink.soporte@gmail.com">prestalink.soporte@gmail.com</a></p>
+<p>If a lender recorded you as an internal client, you can ask them to correct or delete your details, or write to us at <a href="mailto:prestalink.soporte@gmail.com">prestalink.soporte@gmail.com</a></p>
 </section>
 <section>
 <h2>8. Security</h2>
 <p>All traffic between the application and the server is encrypted.</p>
 <p>Access to data is controlled by the database row by row, not by the application: even if someone queried the server outside the app, they would only get their own data.</p>
 <p>Passwords are stored encrypted and no one, including us, can read them. If you sign in with Apple or Google, you have no password in PrestaLink.</p>
+<p>To open faster, the application keeps a copy of your profile and your home screen on your phone. It is only shown to your same account. When you sign out from the application it is erased, and the phone stops receiving your notifications. If the session closes on its own due to inactivity, both are kept until you sign in again.</p>
 </section>
 <section>
 <h2>9. Minors</h2>
@@ -80,7 +88,7 @@
 <p>If we change this policy, we will notify you in the application.</p>
 <p>Data controller and contact: <a href="mailto:prestalink.soporte@gmail.com">prestalink.soporte@gmail.com</a></p>
 </section>
-<p class="version">Version 2026-10-04</p>
+<p class="version">Version 2026-10-09</p>
 </main>
 <footer>
   <nav><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms and Conditions</a><a href="delete-account.html">Delete your account</a><a href="support.html">Support</a></nav>

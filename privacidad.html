@@ -18,29 +18,33 @@
 
 <section>
 <h2>1. Qué datos recogemos</h2>
-<p>Identidad: nombre, fecha de nacimiento, tipo y número de documento, y las fotos del documento que subes.</p>
-<p>Contacto y ubicación: correo electrónico, teléfono, dirección, ciudad y país.</p>
+<p>Al registrarte: tu nombre, tu correo electrónico y tu contraseña.</p>
+<p>Si los completas en Datos personales, que es opcional: fecha de nacimiento, teléfono, dirección, ciudad, país, tipo y número de documento, y las fotos de tu documento. Un prestamista puede pedírtelos antes de prestarte.</p>
 <p>Si entras con Apple o con Google: el nombre y el correo que ese servicio nos entrega (con Apple puede ser una dirección que reenvía a tu correo, si eliges ocultarlo) y un identificador de tu cuenta en ese servicio. No recibimos tu contraseña de Apple ni de Google.</p>
 <p>Datos del prestamista: su método de depósito y los datos de la cuenta donde recibe el dinero.</p>
+<p>Clientes internos: si eres prestamista y anotas a un cliente que no usa la aplicación, guardamos los datos que registres de él: su nombre y, si los pones, su teléfono, correo, fecha de nacimiento, documento, dirección, notas y las fotos de su documento.</p>
 <p>Actividad: solicitudes, préstamos, cuotas y pagos registrados.</p>
+<p>De tu teléfono: el identificador que Apple o Google le dan para recibir notificaciones, y si es iPhone o Android.</p>
 <p>No recogemos datos de tu dispositivo con fines publicitarios, y no usamos rastreadores de terceros.</p>
 </section>
 <section>
 <h2>2. Para qué los usamos</h2>
-<p>Para que un prestamista pueda saber a quién le está prestando, que es la razón por la que se piden documentos.</p>
+<p>Para que un prestamista pueda saber a quién le está prestando, que es la razón por la que puede pedir documentos.</p>
 <p>Para llevar la cuenta de lo que se debe y de lo que se pagó.</p>
-<p>Para contactarte sobre tu cuenta o tus préstamos.</p>
+<p>Para avisarte de vencimientos, solicitudes y pagos, y contactarte sobre tu cuenta o tus préstamos.</p>
 <p>No usamos tus datos para publicidad y no los vendemos ni los cedemos a terceros con fines comerciales.</p>
 </section>
 <section>
 <h2>3. Quién ve qué</h2>
-<p>El prestamista al que le envías una solicitud ve tus datos de identidad, contacto y las fotos de tu documento. Es lo que le permite decidir si te presta.</p>
+<p>El prestamista al que le envías una solicitud ve los datos de identidad y contacto que hayas completado, y las fotos de tu documento si las subiste. Es lo que le permite decidir si te presta.</p>
 <p>El cliente ve del prestamista su nombre, su código, su ciudad y las condiciones que publica. Cuando el prestamista le aprueba un préstamo, también ve sus métodos de depósito con los datos que el prestamista anotó en cada uno (por ejemplo, banco, número de cuenta y titular), para saber cómo recibir el dinero y cómo pagarle. No ve su cartera ni sus otros clientes.</p>
+<p>Los datos y las fotos de un cliente interno solo los ve el prestamista que los registró.</p>
 <p>Ningún usuario ve los préstamos, los clientes ni los documentos de otro. Esto no depende de la aplicación sino de las reglas de la base de datos, que rechazan cualquier consulta por datos ajenos.</p>
 </section>
 <section>
 <h2>4. Con quién se comparten</h2>
 <p>Con Supabase, que aloja la base de datos y los archivos por cuenta nuestra y bajo nuestras instrucciones.</p>
+<p>Con Expo, que entrega las notificaciones a tu teléfono a través de Apple o Google: le llegan el identificador de notificaciones de tu teléfono y el texto del aviso.</p>
 <p>Si entras con Apple o con Google: ese servicio confirma quién eres y sabe que usas PrestaLink. No le llega nada de lo que haces en la aplicación.</p>
 <p>Si eres prestamista y te suscribes: con Apple o Google (o el procesador externo con que pagues), que cobran la suscripción, y con RevenueCat, que nos confirma su estado. Les llega tu identificador de usuario y los datos de la compra; los de tus préstamos y tus clientes, no.</p>
 <p>Con Sentry, que recibe los reportes de errores de la aplicación para que podamos corregirlos: qué falló, en qué pantalla, el modelo y el sistema de tu teléfono, la versión de la aplicación y tu identificador de usuario. No le llegan tu nombre, tu correo, tus documentos ni los datos de tus préstamos.</p>
@@ -49,27 +53,31 @@
 </section>
 <section>
 <h2>5. Las fotos de tu documento</h2>
-<p>Se guardan en un almacenamiento privado, en una carpeta separada por usuario. No son accesibles con un enlace público.</p>
-<p>Solo las ve el prestamista al que le enviaste una solicitud. No se usan para ninguna otra cosa.</p>
+<p>Subirlas es opcional. Se guardan en un almacenamiento privado, en una carpeta separada por usuario. No son accesibles con un enlace público.</p>
+<p>Solo las ve el prestamista al que le enviaste una solicitud, que puede aprobarlas o pedirte otras. No se usan para ninguna otra cosa.</p>
+<p>Las fotos del documento de un cliente interno las sube su prestamista, y solo él las ve.</p>
 </section>
 <section>
 <h2>6. Cuánto tiempo los conservamos</h2>
 <p>Mientras tu cuenta exista, y después el tiempo que exijan las obligaciones legales o contables aplicables.</p>
 <p>Si eliminas tu cuenta, borramos tus datos personales, las fotos de tu documento, tu correo y tu acceso. Si tuviste préstamos, la otra parte conserva ese historial con tu nombre marcado «cuenta eliminada», porque también es su registro de lo que prestó o pagó.</p>
+<p>Si eres prestamista, al eliminar tu cuenta también se borran tus clientes internos, con sus préstamos, sus datos y sus fotos. Un cliente interno sin préstamos se puede borrar en cualquier momento, y con él sus datos y sus fotos.</p>
 <p>Si entraste con Apple, al eliminar tu cuenta también le pedimos a Apple que retire el permiso que le diste a PrestaLink.</p>
-<p>Con préstamos en curso la cuenta no se puede eliminar: su historial es la prueba de lo que se debe.</p>
+<p>Con préstamos en curso con otro usuario la cuenta no se puede eliminar: su historial es la prueba de lo que se debe.</p>
 </section>
 <section>
 <h2>7. Tus derechos</h2>
 <p>Acceder a tus datos y corregirlos: puedes editarlos tú mismo en Más › Datos personales.</p>
 <p>Pedir que borremos tu cuenta y tus datos. Si tienes préstamos activos, primero hay que cerrarlos: lo que se debe no se puede borrar unilateralmente porque afecta a la otra parte.</p>
 <p>Oponerte a un tratamiento o pedir una copia de tus datos, escribiendo a <a href="mailto:prestalink.soporte@gmail.com">prestalink.soporte@gmail.com</a></p>
+<p>Si un prestamista te registró como cliente interno, puedes pedirle a él que corrija o borre tus datos, o escribirnos a <a href="mailto:prestalink.soporte@gmail.com">prestalink.soporte@gmail.com</a></p>
 </section>
 <section>
 <h2>8. Seguridad</h2>
 <p>Todo el tráfico entre la aplicación y el servidor va cifrado.</p>
 <p>El acceso a los datos lo controla la base de datos fila por fila, no la aplicación: aunque alguien consultara el servidor por fuera de la app, solo obtendría lo suyo.</p>
 <p>Las contraseñas se guardan cifradas y nadie, tampoco nosotros, puede leerlas. Si entras con Apple o con Google, no tienes contraseña en PrestaLink.</p>
+<p>Para abrir más rápido, la aplicación guarda en tu teléfono una copia de tu perfil y de tu pantalla de inicio. Solo se muestra a tu misma cuenta. Cuando cierras sesión desde la aplicación se borra, y el teléfono deja de recibir tus notificaciones. Si la sesión se cierra sola por inactividad, se conservan hasta que vuelvas a entrar.</p>
 </section>
 <section>
 <h2>9. Menores de edad</h2>
@@ -80,7 +88,7 @@
 <p>Si cambiamos esta política te lo avisaremos en la aplicación.</p>
 <p>Responsable del tratamiento y contacto: <a href="mailto:prestalink.soporte@gmail.com">prestalink.soporte@gmail.com</a></p>
 </section>
-<p class="version">Versión 2026-10-04</p>
+<p class="version">Versión 2026-10-09</p>
 </main>
 <footer>
   <nav><a href="privacidad.html">Política de Privacidad</a><a href="terminos.html">Términos y Condiciones</a><a href="eliminar-cuenta.html">Eliminar tu cuenta</a><a href="soporte.html">Soporte</a></nav>
