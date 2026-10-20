@@ -51,3 +51,20 @@ code { font-size: 13px; word-break: break-all; }
 footer { max-width: 760px; margin: 24px auto 0; padding: 20px 20px 36px; border-top: 1px solid var(--borde); font-size: 13px; color: var(--suave); }
 footer nav { display: flex; flex-wrap: wrap; gap: 6px 16px; margin-bottom: 10px; }
 footer p { color: var(--suave); margin: 6px 0; }
+/* prestalink.app: las dos descargas y la página del código. */
+.descargas { display: grid; gap: 12px; margin: 22px 0; }
+.descargas .boton, .boton.ancho { display: block; margin: 0; text-align: center; }
+.boton small { display: block; font-weight: 500; font-size: 13px; opacity: 0.85; }
+.boton.secundario { background: transparent; color: var(--azul); border: 1.5px solid var(--azul); }
+.codigo-caja {
+  display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 2px 12px;
+  margin: 18px 0; padding: 16px; border: 1px solid var(--borde); border-radius: 12px;
+  background: rgba(30, 111, 255, 0.06);
+}
+.codigo-caja span { grid-column: 1 / -1; font-size: 13px; color: var(--suave); }
+.codigo-caja strong { font-size: 28px; letter-spacing: 3px; word-break: break-all; }
+.codigo-caja button {
+  font: inherit; font-weight: 600; font-size: 14px; color: var(--azul); cursor: pointer;
+  padding: 8px 14px; border: 1.5px solid var(--azul); border-radius: 999px; background: transparent;
+}
+.oculto { display: none; }
