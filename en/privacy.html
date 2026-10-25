@@ -26,6 +26,7 @@
 <p>Activity: requests, loans, installments, and recorded payments.</p>
 <p>Ratings: the ones you give and receive when a loan with another user ends (1 to 5 stars and tags from a fixed list; there is no free text). We keep who gave each one so that each person counts only once, but we do not show it to anyone.</p>
 <p>From your phone: the identifier Apple or Google gives it to receive notifications, and whether it is an iPhone or Android.</p>
+<p>Contacts and calendar, only if you use them: if you choose a contact from your phone to fill in an internal client's details, the application reads only that contact (name, phone and email) and keeps it as if you had typed it; it does not read the rest of your contacts. If you add a loan's payments to your calendar, the application creates those events on your phone; it does not read your calendar and we receive nothing from it.</p>
 <p>We do not collect data from your device for advertising purposes, and we do not use third-party trackers.</p>
 </section>
 <section>
@@ -81,7 +82,8 @@
 <p>All traffic between the application and the server is encrypted.</p>
 <p>Access to data is controlled by the database row by row, not by the application: even if someone queried the server outside the app, they would only get their own data.</p>
 <p>Passwords are stored encrypted and no one, including us, can read them. If you sign in with Apple or Google, you have no password in PrestaLink.</p>
-<p>To open faster, the application keeps a copy of your profile and your home screen on your phone. It is only shown to your same account. When you sign out from the application it is erased, and the phone stops receiving your notifications. If the session closes on its own due to inactivity, both are kept until you sign in again.</p>
+<p>To open faster and so you can see your data even without a connection, the application keeps on your phone a copy of what you saw last: your profile, your home screen, your loans, your clients or lenders, your portfolio and the last loans you opened. That copy and your session are stored encrypted, with a key that is created on your phone, lives in its secure keychain and never leaves it. They are only shown to your same account. When you sign out from the application they are erased, along with any receipts and files you exported, and the phone stops receiving your notifications. If the session closes on its own due to inactivity, they are kept until you sign in again.</p>
+<p>Notifications on your phone may show names and amounts on the lock screen. If you prefer them to say only that you have a new notification, turn on Discreet notifications under More › Security.</p>
 </section>
 <section>
 <h2>9. Minors</h2>
@@ -92,7 +94,7 @@
 <p>If we change this policy, we will notify you in the application.</p>
 <p>Data controller and contact: <a href="mailto:soporte@prestalink.app">soporte@prestalink.app</a> (or <a href="mailto:prestalink.soporte@gmail.com">prestalink.soporte@gmail.com</a>)</p>
 </section>
-<p class="version">Version 2026-10-16</p>
+<p class="version">Version 2026-10-25</p>
 </main>
 <footer>
   <nav><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms and Conditions</a><a href="delete-account.html">Delete your account</a><a href="support.html">Support</a></nav>
